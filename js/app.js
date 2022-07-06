@@ -34,3 +34,20 @@ class Monster extends Digimon {
 }
 // console.log(Monster)
 
+//CREATE Variables/Functions and link the values to the HTML
+const pet = new Monster ('')
+const beingButton = document.querySelector('#Begin')
+const exerciseButton = document.querySelector('#Exercise!')
+const eatButton = document.querySelector('#Feed Monster')
+const lightButton = document.querySelector('#Lights On/Off')
+// eatButton.addEventListener('click', (setHunger))
+
+let theGame = {
+    setHunger: () => {
+        const intervalID = setInterval((this.hunger)) => {
+            const hungryID = document.querySelector(#Hunger);
+            // ask about innerHTML 
+            hungryID.innerHTML = `Hunger: ${this.hunger}`;
+        }
+    }
+}
