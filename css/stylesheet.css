@@ -1,10 +1,13 @@
 body {
+    background-image: url('/Users/elishaeshoo/sei-cosmos/mini_project/tiny_woods.png.png');
     background-size: fill;
     top: 0;
     bottom: 0;
 }
 
-document {
+.document {
     background-color: black;
     color: white
 }
+
+#Sprite 
