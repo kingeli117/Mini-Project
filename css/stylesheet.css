@@ -1,13 +1,27 @@
 body {
-    background-image: url('/Users/elishaeshoo/sei-cosmos/mini_project/tiny_woods.png.png');
-    background-size: fill;
-    top: 0;
-    bottom: 0;
+    background-image: url('../imgs/adobeStock_153375459.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
-.document {
-    background-color: black;
-    color: white
+
+
+.box {
+
+    word-spacing: 6px;
+    background-color: beige;
+    border: 2px solid black;
+    position: absolute;
+    padding: 10px;
+    margin: auto;
 }
 
-#Sprite 
+#Digimon {
+    position: center;
+
+}
+
+h1 {
+    text-align: center;
+}
