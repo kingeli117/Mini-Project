@@ -92,11 +92,11 @@ const theGame = {
         alert('Starting the Digimon Virtual Tamagotchi!')
         alert('Keep your Digimon well nurtured for it to evolve to it\'s final evolution.')
         alert('And finally, Good luck!!!')
-        monsterName();
-        evolveAge();
-        letsPlay();
-        setHunger();
-        lightsOnOff();
+        theGame.monsterName();
+        theGame.evolveAge();
+        theGame.letsPlay();
+        theGame.setHunger();
+        theGame.lightsOnOff();
     }
 
 }// END of object / game 

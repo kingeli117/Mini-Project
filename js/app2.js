@@ -31,7 +31,7 @@ class Monster extends Digimon {
 const petDigimon = new Monster ('')
 const beginButton = document.querySelector('.Start')
 const exerciseButton = document.querySelector('.Play')
-const eatButton = document.querySelector('.Eat')
+const eatButton = document.getElementById('.Eat')
 const lightButton = document.querySelector('.Rest')
 
 const theGame = {
@@ -40,7 +40,7 @@ const theGame = {
         const intervalID = setInterval(() => {
             const hungryID = document.querySelector('#Hunger');
             hungryID.innerHTML = `Hunger: ${petDigimon.hunger}`;
-            petDigimon.hunger -= 3;
+            petDigimon.hunger++;
             if(petDigimon.hunger <= 10) {
                 alert('You don\'t have what it takes to raise a Monster...');
             }
@@ -73,7 +73,7 @@ const theGame = {
         const intervalID = setInterval(() => {
             const exerciseID = document.querySelector('#Play');
             exerciseID.innerHTML = `Boredom: ${petDigimon.boredom}`;
-            petDigimon.boredom -= 2;
+            petDigimon.boredom++;
 
             if (petDigimon.boredom <= 10) {
                 alert('You don\'t have what it takes to raise a Monster...');
@@ -112,13 +112,12 @@ const theGame = {
         alert('Starting the Digimon Virtual Tamagotchi!')
         alert('Keep your Digimon well nurtured for it to evolve to it\'s final evolution.')
         alert('And finally, Good luck!!!')
-        theGame.monsterName();
-        theGame.evolveAge();
-        theGame.letsPlay();
-        theGame.setHunger();
-        theGame.lightsOnOff();
+        this.monsterName();
+        this.evolveAge();
+        this.letsPlay();
+        this.setHunger();
+        this.lightsOnOff();
     }
-
 }
 
 beginButton.addEventListener('click', (event) => {
